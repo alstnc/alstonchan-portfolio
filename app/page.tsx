@@ -89,7 +89,7 @@ export default function Home() {
 
 			<section className="text-white" id="projects">
 				<div className="">
-					<h2 className="text-3xl font-bold sm:text-4xl">projects</h2>
+					<h2 className="text-2xl font-bold sm:text-4xl">projects</h2>
 				</div>
 
 				<div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -198,7 +198,7 @@ export default function Home() {
 
       <section className="text-white mt-8" id="gallery">
 				<div className="max-w-3xl">
-					<h2 className="text-3xl font-bold sm:text-4xl mb-8">gallery</h2>
+					<h2 className="text-2xl font-bold sm:text-4xl mb-8">gallery</h2>
 				</div>
         <div className="flex flex-row justify-between">
           <Image
@@ -221,16 +221,39 @@ export default function Home() {
 
 			<section className="text-white mt-8" id="blog">
 				<div className="max-w-3xl">
-					<h2 className="text-3xl font-bold sm:text-4xl">blog</h2>
+					<h2 className="text-2xl font-bold sm:text-4xl">blog</h2>
 				</div>
 				<div className="mt-8">
 					<Card className="bg-zinc-800 text-white">
 						<CardHeader>
-							<CardTitle>my first post!</CardTitle>
+							<CardTitle>rage against the dying of the light</CardTitle>
 							<CardDescription className="text-zinc-200">oct. 30, 2023</CardDescription>
 						</CardHeader>
 						<CardContent>
-							<p>this is where i would put my blog content, if I had any!</p>
+							<p>Do not go gentle into that good night,
+Old age should burn and rave at close of day;
+Rage, rage against the dying of the light.
+
+Though wise men at their end know dark is right,
+Because their words had forked no lightning they
+Do not go gentle into that good night.
+
+Good men, the last wave by, crying how bright
+Their frail deeds might have danced in a green bay,
+Rage, rage against the dying of the light.
+
+Wild men who caught and sang the sun in flight,
+And learn, too late, they grieved it on its way,
+Do not go gentle into that good night.
+
+Grave men, near death, who see with blinding sight
+Blind eyes could blaze like meteors and be gay,
+Rage, rage against the dying of the light.
+
+And you, my father, there on the sad height,
+Curse, bless, me now with your fierce tears, I pray.
+Do not go gentle into that good night.
+Rage, rage against the dying of the light.</p>
 						</CardContent>
 					</Card>
 				</div>
