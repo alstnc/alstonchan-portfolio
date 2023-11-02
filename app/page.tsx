@@ -1,8 +1,13 @@
+"use client";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import adastra from "@/public/adastra.png";
 import dbk from "@/public/dbk.png";
+import one from "@/public/1.png";
+import two from "@/public/2.jpeg";
+import three from "@/public/3.jpeg";
+
 import {
 	Card,
 	CardContent,
@@ -12,7 +17,16 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 
+
 export default function Home() {
+
+  function scrollToSection(sectionId: any) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 	return (
 		<div>
 			<nav className="text-gray-200 font-light flex flex-row justify-between">
@@ -20,16 +34,16 @@ export default function Home() {
 					<p>alston chan</p>
 				</div>
 				<ul className="flex justify-start space-x-8">
-					<li className="hover:text-gray-300 hover:underline hover:underline-offset-2">
-						<Link href="/">home</Link>
-					</li>
-					<li className="hover:text-gray-300 hover:underline hover:underline-offset-2">
-						<Link href="/guestbook">gallery</Link>
-					</li>
-					<li className="hover:text-gray-300 hover:underline hover:underline-offset-2">
-						<Link href="/guestbook">blog</Link>
-					</li>
-				</ul>
+          <li className="hover:text-gray-300 hover:underline hover:underline-offset-2">
+            <button onClick={() => scrollToSection('projects')}>projects</button>
+          </li>
+          <li className="hover:text-gray-300 hover:underline hover:underline-offset-2">
+            <button onClick={() => scrollToSection('gallery')}>gallery</button>
+          </li>
+          <li className="hover:text-gray-300 hover:underline hover:underline-offset-2">
+            <button onClick={() => scrollToSection('blog')}>blog</button>
+          </li>
+        </ul>
 			</nav>
 
 			<div className="flex items-center gap-4 my-8">
@@ -41,10 +55,10 @@ export default function Home() {
 
 				<div>
 					<h3 className="text-2xl font-medium text-white">
-						hey, i &apos;m alston!
+						hey, i&apos;m alston!
 					</h3>
 					<p className="font-light text-white my-2">
-						i &apos;m an undergradute studying cs @ the univ. of maryland,
+						i&apos;m an undergradute studying cs @ the univ. of maryland,
 						and an aspiring full stack developer. currently working
 						for the diamondback newspaper.
 					</p>
@@ -73,7 +87,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<section className="text-white">
+			<section className="text-white" id="projects">
 				<div className="">
 					<h2 className="text-3xl font-bold sm:text-4xl">projects</h2>
 				</div>
@@ -114,7 +128,7 @@ export default function Home() {
 
 							<p className="text-gray-500">
 								built an interactive web app for the diamondback
-								newspaper &apos;s stylebook, which was previously a 50
+								newspaper&apos;s stylebook, which was previously a 50
 								page pdf file. integrated a supabase backend to
 								allow edits to be made to the stylebook.
 							</p>
@@ -172,7 +186,7 @@ export default function Home() {
 							</div>
 
 							<p className="text-gray-500">
-								used openai &apos;s gpt-3.5 to create a teacher &apos;s
+								used openai&apos;s gpt-3.5 to create a teacher&apos;s
 								assistant for my computer science classes,
 								particularly cmsc216 introduction to computer
 								systems. trained on 100+ pages of cmsc216 notes.
@@ -182,13 +196,30 @@ export default function Home() {
 				</div>
 			</section>
 
-      <section className="text-white mt-8">
+      <section className="text-white mt-8" id="gallery">
 				<div className="max-w-3xl">
-					<h2 className="text-3xl font-bold sm:text-4xl">gallery</h2>
+					<h2 className="text-3xl font-bold sm:text-4xl mb-8">gallery</h2>
 				</div>
+        <div className="flex flex-row justify-between">
+          <Image
+							alt="one"
+							src={one}
+							className="w-1/4 object-top object-cover"
+					/>
+          <Image
+							alt="one"
+							src={three}
+							className="w-1/4 object-top object-cover"
+					/>
+          <Image
+							alt="one"
+							src={two}
+							className="w-1/4 object-top object-cover"
+					/>
+        </div>
       </section>
 
-			<section className="text-white mt-8">
+			<section className="text-white mt-8" id="blog">
 				<div className="max-w-3xl">
 					<h2 className="text-3xl font-bold sm:text-4xl">blog</h2>
 				</div>
