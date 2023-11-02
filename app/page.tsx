@@ -41,10 +41,10 @@ export default function Home() {
 
 				<div>
 					<h3 className="text-2xl font-medium text-white">
-						hey, i'm alston!
+						hey, i &apos;m alston!
 					</h3>
 					<p className="font-light text-white my-2">
-						i'm an undergradute studying cs @ the univ. of maryland,
+						i &apos;m an undergradute studying cs @ the univ. of maryland,
 						and an aspiring full stack developer. currently working
 						for the diamondback newspaper.
 					</p>
@@ -114,7 +114,7 @@ export default function Home() {
 
 							<p className="text-gray-500">
 								built an interactive web app for the diamondback
-								newspaper's stylebook, which was previously a 50
+								newspaper &apos;s stylebook, which was previously a 50
 								page pdf file. integrated a supabase backend to
 								allow edits to be made to the stylebook.
 							</p>
@@ -172,7 +172,7 @@ export default function Home() {
 							</div>
 
 							<p className="text-gray-500">
-								used openai's gpt-3.5 to create a teacher's
+								used openai &apos;s gpt-3.5 to create a teacher &apos;s
 								assistant for my computer science classes,
 								particularly cmsc216 introduction to computer
 								systems. trained on 100+ pages of cmsc216 notes.
